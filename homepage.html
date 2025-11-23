@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<style>
+    .card:hover{
+        transform: translatey(-10px);
+        box-shadow: 0 10px 25px rgb(0, 7, 3);
+    }
+
+    
+    .photo:hover{
+        transform: translatey(-10px);
+        box-shadow: 0 10px 25px rgb(0, 7, 3);
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<body class="bg-black">
+    <!-- Navbar content -->
+    
+    <nav class="navbar sticky-top navbar-expand-lg bg-black mt-1" style="position: sticky; width: 100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"> <i class="bi bi-spotify text-success"></i> <b>Lumify</b></a>
+           <a href="">
+            <span class=" text-white  p-2 d-flex align-items-center justify-content-center">
+                <i class="bi bi-house-door-fill text-light fs-4"></i>
+              </span>
+           </a>
+          
+          <div class="container" style="width: 600px;">
+            <form class="d-flex " role="search">
+                
+                <div class="input-group rounded-pill me-2 " style="overflow: hidden; max-width: 450px;">
+                    <span class="input-group-text bg-white border-0">
+                        <a href=""><i class="bi bi-search text-dark"></i></a> <!-- Bootstrap Icons -->
+                    </span>
+                    
+                    <input type="search" class="form-control  border-0"  placeholder="What do you want to play ?" aria-label="Search">
+                    <span class="input-group-text bg-white border-0">
+                        <i class="bi bi-folder" ></i> <!-- Bootstrap Icons -->
+                      </span>
+                  </div>
+                   
+            </form>
+          </div>
+
+
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light"  href="#" sty><b>Premium</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#"><b>Support</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#"><b>Download</b></a>
+              </li>
+            </ul>
+            <div><b>|</b></div>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-light"  href="#"><b><i class="bi bi-download"></i>&nbsp;Install App</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="Signin_page.html"><b>Sign in</b></a>
+                </li>
+                
+              </ul>
+
+            <button class="btn btn-light  rounded-pill p-2 "style="width: 100px;" type="submit"><a class="text-dark" href="login_page.html"><b>Log in</b></a></button>
+
+          </div>
+        </div>
+
+        
+    </nav>
+ 
+<!-- Navbar content -->
+
+<!-- start of the content -->
+<div class=" d-flex mt-3 mb-3" >
+    <!-- end of side bar -->
+    <div class="container ms-4 bg-dark rounded" style="width: 350px; height: 950px;">
+        <div class="d-flex m-3" style="justify-content: space-between; width: 300px;">
+            <h5 class="text-light">Your Library </h5><br>
+            
+        </div>
+          
+          <div>
+              <div class="card mt-3 mx-3 text-light p-2" style="background-color: rgb(59, 58, 58); width: 290px;">
+                  <b>Create your first playlist</b>
+                  It's easy, we'll help you <br> <br>
+  
+                  <button class="btn btn-light rounded-pill p-1 "style="width: 150px;" type="submit">Create playlist</button>
+              </div>
+          </div>
+  
+          <div>
+            <div class="card  text-light mt-3 mx-3 p-2" style="background-color: rgb(59, 58, 58); width: 290px;">
+                <b>Let's find some podcast to follow</b>
+                We'll keep you updated on new episodes <br> <br>
+  
+                <button class="btn btn-light rounded-pill p-1 "style="width: 150px;" type="submit">Create playlist</button>
+            </div>
+         </div>
+
+         <div class=" mx-3 lh-1 " style="position: fixed; word-spacing: 10px; font-size: small; margin-top: 50px; ">
+            <a href="" class="text-light">Legal</a>
+            <a href="" class="text-light"> saftey&PrivacyCenter</a> <br><br>
+            <a href="" class="text-light">PrivacyPolicy</a>
+            <a href="" class="text-light">Cookies</a> 
+            <a href="" class="text-light">AboutAds</a> <br><br>
+            <a href="" class="text-light">Accessibility</a>
+            
+         </div>
+
+    </div><!-- end of side bar -->
+
+    <!-- start of the music page -->
+    <div class="container bg-dark  mx-3 me-4 rounded" style="width: 1000px;" >
+        <!-- start of the trending songs-->
+        <div class="d-flex m-3" style="justify-content: space-between;">
+            <h4 class="text-light text-start mx-3">Trending Songs</h4>
+            <h6 class="text-light"><a class="text-light" href="">Show All</a></h6>
+        </div> 
+
+        <div class="d-flex">
+            <div>
+                <div class="card me-2 ms-5 " style="width: 150px; ">
+                    <img class="rounded" src="https://m.media-amazon.com/images/M/MV5BZWFiMzEzZTQtZjFiZC00YjhjLTk3Y2QtYzA2MjE4MmRiNzdmXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="..." height="150px">
+                </div>
+                <p class="text-light me-2 ms-5 "><a class="text-light" href="oorum blood.html"><b>Oorum Blood</b></a> <br>
+                  <small style="font-size: small;">Sai Abhyankkar, Paal Dabba <br>Bebhumika</small></p>
+            </div>
+
+            <div>
+                <div class="card mx-3" style="width: 150px;">
+                    <img class="rounded" src="https://m.media-amazon.com/images/M/MV5BOTE1M2ZkZjYtNzExNi00MTQwLTg3ZDYtYTA3YmQyMDgyZjU4XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="..." height="150px">
+                </div>
+                <p class="text-light mx-3"><a class="text-light" href="thalapathy kachari.html"><b>Thalapathy Kacheri</b></a> <br>
+                  <small style="font-size: small;">Anirudh Ravichander,<br>Thalapthy Vijay, Arivu</small></p>
+                
+            </div>
+
+            <div>
+                <div class="card mx-3" style="width: 150px;">
+                    <img class="rounded" src="https://i.scdn.co/image/ab67616d0000b27325fa8e214ad888b7d291f25e" class="card-img-top" alt="..." height="150px">
+                </div>
+                <p class="text-light mx-3 "><a class="text-light" href="monica.html"><b>Monica</b></a> <br>
+                  <small style="font-size: small;">Anirudh Ravichander,<br>Sublahshini, Asal Kolaar</small></p>
+        
+            </div>
+
+            <div>
+                <div class="card mx-3" style="width: 150px;">
+                    <img class="rounded" src="https://m.media-amazon.com/images/I/51gOc6Xcj7L._UXNaN_FMjpg_QL85_.jpg" class="card-img-top" alt="..." height="150px">
+                </div>
+                <p class="text-light mx-3 "><a class="text-light" href="thangapoova.html"><b>Thangapoovey</b></a> <br>
+                  <small style="font-size: small;">Anirudh Ravichander,<br>Ravi G, Vivek</small></p>
+                
+            </div>
+
+            <div>
+                <div class="card mx-3" style="width: 150px;">
+                    <img class="rounded" src="https://c.saavncdn.com/895/Pottala-Muttaye-From-Thalaivan-Thalaivii-Tamil-2025-20250609172004-500x500.jpg" class="card-img-top" alt="..." height="150px">
+                </div>
+                <p class="text-light mx-3 "><a class="text-light" href="Pottala Muttaye.html"><b>Pottala Muttaye</b></a> <br>
+                  <small style="font-size: small;">Santhosh Narayanan,<br>Sublahshini, Vivek</small></p>
+                
+            </div>
+
+        </div>
+        <!-- End of the trending songs-->
+
+        <!-- start of the Popular Artists-->
+        <div>
+            <div class="d-flex m-3" style="justify-content: space-between;">
+                <h4 class="text-light text-start mx-3">Popular Artists</h4>
+                <h6 class="text-light"> <a class="text-light" href="">Show All</a></h6>
+            </div> 
+
+            <div class="d-flex">
+                <div class="ms-5 me-2" >
+                    <img src="https://i.pinimg.com/736x/dd/c9/ab/ddc9ab7eb0f6ce83d3bf6f61e1ac09b2.jpg" style="border-radius: 100%;" class="photo" alt="" height="150px" width="150px">
+                    <p class="text-light text-center "><a href="Anirudh.html"><b><small> Anirudh Ravichander</small></b></a></p>
+                </div>
+    
+                <div class="mx-3" >
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsv5giPLiigheqzfALDVvD86eW4cF3a-mm4Q&s" style="border-radius: 100%;" class="photo" alt="" height="150px" width="150px">
+                    <p class="text-light text-center"><a href=""><b><small>A.R.Rahman</small></b></a></p>
+                </div>
+
+                <div class="mx-3">
+                    <img  src="https://i.scdn.co/image/ab6761610000e5eb8b1862a929651ee5ff4ce67c" style="border-radius: 100%;" class="photo" alt="" height="150px" width="150px">
+                    <p class="text-light text-center"><a href=""><b><small>Chinmayi Sripada</small></b></a></p>
+                </div>
+
+                <div class="mx-3" >
+                    <img src="https://i.pinimg.com/736x/e8/30/6a/e8306aadb6a244818a1aab8d6ea752a4.jpg" style="border-radius: 100%;" class="photo" alt="" height="150px" width="150px">
+                    <p class="text-light text-center"><a href=""><b><small>G.V.Prakash</small></b></a></p>
+                </div>
+
+                <div class="mx-3" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyf5N_LsHvz5esLxmGSD1yWyGA-leEo8LE2w&s" style="border-radius: 100%;" class="photo" alt="" height="150px" width="150px">
+                    <p class="text-light text-center"><a href=""><b><small>Shreya Ghoshal</small></b></a></p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End of the Popular Artists-->
+
+        <!-- start of the Popular Albums-->
+        <div >
+            <div class="d-flex m-3" style="justify-content: space-between;">
+                <h4 class="text-light text-start mx-3">Popular Albums</h4>
+                <h6 class="text-light"><a class="text-light" href="">Show All</a></h6>
+            </div> 
+
+            <div class="d-flex">
+                <div >
+                    <div class="card me-2 ms-5 " style="width: 150px;">
+                        <img class="rounded" src="https://m.media-amazon.com/images/M/MV5BYmYxNzI2ZTktNmNhMi00ZDEyLWE4ODctNDM0ZTk0NjVjYWNmXkEyXkFqcGc@._V1_QL75_UY190_CR74,0,190,190_.jpg" class="card-img-top" alt="..." height="150px">
+                    </div>
+                    <p class="text-light me-2 ms-5 "><a class="text-light" href="Tum hi ho.html"><b>Tum hi ho</b> </a><br>
+                      <small style="font-size: small;">Mithoon, Ankit Tiwari,<br>Jeet Gannguli</small></p>
+                </div>
+    
+                <div >
+                    <div class="card mx-3" style="width: 150px;">
+                        <img class="rounded" src="https://upload.wikimedia.org/wikipedia/en/2/21/Kaththi_soundtrack_cover.jpg" class="card-img-top" alt="..." height="150px">
+                    </div>
+                    <p class="text-light mx-3 "><a class="text-light" href="aathi.html"><b>Aathi (from Kathi)</b></a> <br>
+                      <small style="font-size: small;">Anirudh Ravichander,<br>JVishal Dadlani</small></p>
+                </div>
+
+                <div >
+                    <div class="card mx-3 " style="width: 150px;">
+                        <img class="rounded" src="https://c.saavncdn.com/076/Jaalakaari-From-Balti-Malayalam-2025-20250824120531-500x500.jpg" class="card-img-top" alt="..." height="150px">
+                    </div>
+                    <p class="text-light mx-3"><a class="text-light" href="jaalakari.html"><b>Jaalakaari (from Balti)</b></a> <br>
+                      <small style="font-size: small;">Sai Abhyankkar,<br>Sublahshini, Vinayak Sasikumar</small></p>
+                </div>
+
+                <div>
+                    <div class="card mx-3" style="width: 150px;">
+                        <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwTtKBMN4Hs5mr87C8XTsTBi0h7dRNkNHIg&s" class="card-img-top" alt="..." height="150px">
+                    </div>
+                    <p class="text-light mx-3 "><a class="text-light" href="vizhi veekura.html"><b>Vizhi Veekura </b></a> <br>
+                      <small style="font-size: small;">Sai Abhyankkar,<br>Sai Smriti,Adesh Krishna</small></p>  
+                </div>
+
+                <div>
+                    <div class="card mx-3 " style="width: 150px;">
+                        <img class="rounded" src="https://c.saavncdn.com/815/Singari-From-Dude-Tamil-2025-20251004190656-500x500.jpg" class="card-img-top" alt="..." height="150px">
+                    </div>
+                    <p class="text-light mx-3"><a class="text-light" href="singari.html"><b>Singari (From Dude)</b></a> <br>
+                      <small style="font-size: small;">Sai Abhyankkar,<br>Pradeep Ranganathan,<br>Sai Smriti</small></p>  
+                </div>
+
+            </div>
+        
+        </div>
+        <!-- End of the Popular Albums-->
+
+    </div>
+    <!-- start of the music page -->
+
+</div>
+<!-- start of the content -->
+
+<!-- start of footer -->
+<footer class="bg-dark text-success text-center">
+    <div class="container lh-1" style=" height: 50px; margin-top: 30px;">
+    <p> @2025 <i class="bi bi-spotify"></i> Spotify. All rights reserved.</p>
+    <p> 
+      Connect with us on: 
+      <i class="bi bi-facebook"></i> 
+      <i class="bi bi-instagram"></i> 
+      <i class="bi-twitter"></i> 
+      <i class="bi-linkedin"></i> 
+      <i class="bi bi-youtube"></i> 
+    </p>
+    </div>
+    
+    
+</footer>
+<!-- End of footer -->
+
+    
+</body>
+</html>
